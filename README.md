@@ -72,9 +72,9 @@ Projeto-Elgin-i9/
 
 *Em ordem alfabética:*
 
-- Ana Beatriz Souza
-- Carlos Henrique Pereira
-- Marcos Vinicius Almeida
+- Carlos Eduardo oliveira   
+- Vinicius Kendy Correia Shirazawa
+- Murilo de Souza Oliveira
 
 ---
 
