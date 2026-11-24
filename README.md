@@ -73,8 +73,8 @@ Projeto-Elgin-i9/
 *Em ordem alfabética:*
 
 - Carlos Eduardo oliveira   
-- Vinicius Kendy Correia Shirazawa
 - Murilo de Souza Oliveira
+- Vinicius Kendy Correia Shirazawa
 
 ---
 
