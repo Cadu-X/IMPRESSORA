@@ -1,51 +1,81 @@
-🖨️ Integração Java com Impressora Elgin i9
-(Coloque aqui o nome do seu projeto)
+# 🖨️ Integração Java com Impressora Elgin i9
 
-📘 Sobre o Projeto
-Este projeto foi desenvolvido por alunos com o objetivo de criar uma aplicação Java capaz de se comunicar com a impressora Elgin i9, utilizando comandos ESC/POS, testes de impressão e interação via porta de comunicação.
-O trabalho faz parte da disciplina de Programação Orientada a Objetos.
+## 📘 Sobre o Projeto
 
-🧰 Tecnologias Utilizadas
-Java 17
-IntelliJ IDEA
-Biblioteca ESC/POS
-Driver/SDK da Elgin i9
-(Opcional) Maven ou Gradle
+Este projeto foi desenvolvido por alunos com o objetivo de criar uma aplicação em Java capaz de realizar a comunicação com a impressora térmica **Elgin i9**, utilizando comandos de impressão, testes de comunicação e interação por meio de portas de comunicação.
 
-📁 Estrutura do Projeto
-/src → Código-fonte principal /lib → Bibliotecas e dependências externas /docs → Materiais adicionais e documentação /examples → Testes e arquivos de demonstração
+O desenvolvimento faz parte da disciplina de **Programação Orientada a Objetos**, colocando em prática conceitos de programação Java e integração com dispositivos externos.
 
-⚙️ Instalação e Execução
-🔽 1. Baixar o Projeto do GitHub
-Acesse o repositório.
-Clique no botão Code.
-Selecione Download ZIP.
-Aguarde o download.
-📦 2. Extrair o Arquivo ZIP
-Vá até o local onde o arquivo foi salvo.
-Clique com o botão direito → Extrair aqui / Extract All.
-Será criada uma nova pasta com os arquivos.
-🧭 3. Importar no IntelliJ IDEA
-Abra o IntelliJ IDEA.
-Clique em Open.
-Escolha a pasta extraída.
-Aguarde o carregamento.
-Caso apareça, clique em Import Project (Maven/Gradle).
-Verifique o SDK em:
-File → Project Structure → Project SDK → Java 17
-Abra o arquivo Main.java e clique em ▶️ Run.
+## 🧰 Tecnologias Utilizadas
 
-🧪 Testes
-Teste de conexão com a impressora
-Impressão de texto simples
-Envio de comandos ESC/POS
-Verificação das portas de comunicação
-Teste com várias mensagens
+- **Java 17**
+- **IntelliJ IDEA**
+- **JNA (Java Native Access)**
+- **Comandos ESC/POS**
+- **Driver/SDK da Elgin i9**
+- **Maven ou Gradle** (se aplicável)
 
-📚 Documentação Adicional
-Manual da Impressora Elgin i9
-Documentação do SDK Elgin
-Referência ESC/POS
+## 📁 Estrutura do Projeto
 
-👥 Autores
+```text
+Projeto-Elgin-i9/
+├── src/        # Código-fonte principal
+├── lib/        # Bibliotecas e dependências externas
+├── docs/       # Documentação e materiais adicionais
+├── examples/   # Exemplos e testes de impressão
+└── README.md   # Documentação do projeto
+```
 
+## ⚙️ Instalação e Execução
+
+### 1. Baixar o Projeto
+
+1. Acesse o repositório no GitHub.
+2. Clique no botão **Code**.
+3. Selecione **Download ZIP**.
+4. Aguarde a conclusão do download.
+
+### 2. Extrair os Arquivos
+
+1. Localize o arquivo ZIP baixado.
+2. Clique com o botão direito e selecione **Extrair Tudo**.
+3. Acesse a pasta extraída.
+
+### 3. Importar no IntelliJ IDEA
+
+1. Abra o **IntelliJ IDEA**.
+2. Selecione a opção **Open**.
+3. Escolha a pasta do projeto.
+4. Aguarde o carregamento dos arquivos.
+5. Verifique se o projeto está configurado com o **Java 17**:
+   - File → Project Structure → Project SDK.
+6. Localize o arquivo `Main.java`.
+7. Execute a aplicação clicando em **Run**.
+
+## 🧪 Testes Realizados
+
+- Teste de comunicação com a impressora Elgin i9.
+- Impressão de textos simples.
+- Envio de comandos ESC/POS.
+- Verificação das portas de comunicação.
+- Testes de impressão com diferentes mensagens.
+- Validação da comunicação entre Java e o dispositivo.
+
+## 📚 Documentação e Referências
+
+- Manual técnico da impressora **Elgin i9**.
+- Documentação do **SDK Elgin**.
+- Referência de comandos **ESC/POS**.
+- Documentação da biblioteca **JNA**.
+
+## 👥 Autores
+
+*Em ordem alfabética:*
+
+- Ana Beatriz Souza
+- Carlos Henrique Pereira
+- Marcos Vinicius Almeida
+
+---
+
+**Projeto acadêmico — Programação Orientada a Objetos**
