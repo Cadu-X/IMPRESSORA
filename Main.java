@@ -204,13 +204,13 @@ public class Main {
     }
 
     public static void impressaoXMLSAT() {
-        String dados = "XMLSAT.xml";
+        String dados = "path=XMLSAT.xml";
 
         if (conexaoAberta) {
             int retorno = ImpressoraDLL.INSTANCE.ImprimeXMLSAT(dados, 0);
             if (retorno == 0) {
                 System.out.println("Retorno impressão XML SAT: " + retorno);
-                ImpressoraDLL.INSTANCE.Corte(6);
+
             }
         } else {
             System.out.println("Erro: impressora não conectada!");
@@ -218,7 +218,7 @@ public class Main {
     }
 
     public static void impressaoXMLCancelamentoSAT() {
-        String dados = "C:/Users/oliveira_carlos01/OneDrive - Instituição Adventista de Ensino/IMPRESSORA-main/IMPRESSORA-main/CANC_SAT.xml";
+        String dados = "path=CANC_SAT.xml";
 
         String assQRCode = "Q5DLkpdRijIRGY6YSSNsTWK1TztHL1vD0V1Jc4spo/CEUqICEb9SFy82ym8EhBRZjbh3btsZhF+sjHqEMR159i4agru9x6KsepK/q0E2e5xlU5cv3m1woYfgHyOkWDNcSdMsS6bBh2Bpq6s89yJ9Q6qh/J8YHi306ce9Tqb/drKvN2XdE5noRSS32TAWuaQEVd7u+TrvXlOQsE3fHR1D5f1saUwQLPSdIv01NF6Ny7jZwjCwv1uNDgGZONJdlTJ6p0ccqnZvuE70aHOI09elpjEO6Cd+orI7XHHrFCwhFhAcbalc+ZfO5b/+vkyAHS6CYVFCDtYR9Hi5qgdk31v23w==";
 
@@ -226,7 +226,7 @@ public class Main {
             int retorno = ImpressoraDLL.INSTANCE.ImprimeXMLCancelamentoSAT(dados, assQRCode, 0);
             if (retorno == 0) {
                 System.out.println("Retorno impressão XML Canc SAT: " + retorno);
-                ImpressoraDLL.INSTANCE.Corte(6);
+
             }
         } else {
             System.out.println("Erro: impressora não conectada!");
@@ -248,19 +248,6 @@ public class Main {
         }
     }
 
-    public static void AbreGaveta() {
-        if (conexaoAberta) {
-            int resultado = ImpressoraDLL.INSTANCE.AbreGaveta(1, 5, 10);
-
-            if (resultado == 0) {
-                System.out.println("Gaveta aberta com sucesso");
-            } else {
-                System.out.println("Erro ao abrir a gaveta! Erro: " + resultado);
-            }
-        } else {
-            System.out.println("Conexão não iniciada!");
-        }
-    }
 
     // ---------------- SINAL SONORO ----------------
     public static void SinalSonoro() {
@@ -307,9 +294,8 @@ public class Main {
             System.out.println("5  - Impressao Cod Barras");
             System.out.println("6  - Impressao XML SAT");
             System.out.println("7  - Impressao XML Canc SAT");
-            System.out.println("8  - Abrir Gaveta Elgin");
-            System.out.println("9  - Abrir Gaveta");
-            System.out.println("10 - Sinal Sonoro");
+            System.out.println("8  - Abrir Gaveta");
+            System.out.println("9 - Sinal Sonoro");
             System.out.println("0  - Fechar Conexao e Sair");
             System.out.println("--------------------------------------");
 
@@ -351,9 +337,6 @@ public class Main {
                     AbreGavetaElgin();
                     break;
                 case "9":
-                    AbreGaveta();
-                    break;
-                case "10":
                     SinalSonoro();
                     break;
                 case "0":
