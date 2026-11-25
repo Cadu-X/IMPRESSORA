@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 //Vinicius Equal
+//Murilo Equal
 public class Main {
 
     // Interface que representa a DLL, usando JNA
