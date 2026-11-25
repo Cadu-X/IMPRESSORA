@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
-
+//Vinicius Equal
 public class Main {
 
     // Interface que representa a DLL, usando JNA
